@@ -2,10 +2,10 @@
 var connection = require("./connection.js");
 
 var orm = {
-    all: function() {
+    all: function(cb) {
         connection.query("SELECT * FROM burgers;", function(err, result) {
             if (err) throw err;
-            console.table(result);
+            cb(result);
         });
     },
     create: function(val, cb) {

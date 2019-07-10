@@ -17,10 +17,8 @@ var burger = {
     orm.update(val, function(res) {
       cb(res);
     });
-  },
+  }
 };
-
-console.log("burgerModel.js is being read.")
 
 // Export the database functions for the controller.
 module.exports = burger;

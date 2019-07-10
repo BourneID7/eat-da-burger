@@ -10,9 +10,6 @@ router.get("/", function(req, res) {
       };
       console.log(hbsObject);
       res.render("index", hbsObject);
-      // res.send("<h1>Sometihng</h1>");
-      console.log("test")
-
     });
 });
 
@@ -37,10 +34,8 @@ router.put("/api/burgers/:id", function(req, res) {
         return res.status(404).end();
       } else {
         res.status(200).end();
-      }
+      };
     });
   });
-
-console.log("burgerController.js is being read.")
 
 module.exports = router;

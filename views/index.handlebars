@@ -6,7 +6,7 @@
             <ul>
                 {{#each burgers}}
                     {{#unless eaten}}
-                        <li>{{this.id}}. {{this.burger_type}}<button data-id="{{this.id}}" class="btn btn-warning btn-sm devour">Devour it!</button></li>
+                        <li>{{this.id}}. {{this.burger_type}}<button data-id="{{this.id}}" class="btn btn-warning btn-sm devour" id="devour">Devour it!</button></li>
                     {{/unless}}
                 {{/each}}
             </ul>
@@ -23,7 +23,7 @@
     <div class="centered">
         <hr>
         <h4>Add a Burger</h4>
-        <form>
+        <form id="addBurger">
             <div class="form-group">
                 <label for="burg-type">Type of Burger:</label>
                 <input type="text" class="form-control" id="burg-type" name="burger_type">

@@ -8,16 +8,28 @@ var burger = {
       console.log(res);
     });
   },
-  create: function(val, cb) {
+  create: function(val) {
     orm.create(val, function(res) {
-      cb(res);
+      console.log(res);
     });
   },
-  update: function(val, cb) {
+
+  // create: function(val, cb) {
+  //   orm.create(val, function(res) {
+  //     cb(res);
+  //   });
+  // },
+  update: function(val) {
     orm.update(val, function(res) {
-      cb(res);
+      console.log(res);
     });
   }
+
+  // update: function(val, cb) {
+  //   orm.update(val, function(res) {
+  //     cb(res);
+  //   });
+  // }
 };
 
 // Export the database functions for the controller.

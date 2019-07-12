@@ -20,13 +20,22 @@ $("#submit").on("click", function(event) {
         burger_type: $("#burg-type").val().trim()
     };
 
-    // send post request
-    $.ajax("/api/burgers", {
-        type: "POST",
-        data: newBurger
-    }).then(function() {
-        console.log(newBurger.burger_type + " added!");
-    });
-    // reload page
-    location.reload();
+    if (newBurger.burger_type.length === 0) {
+        // alert if burger name is empty
+        $('#getCodeModal').on('shown.bs.modal', function () {
+            $('#getCodeModal').trigger('focus')
+            })
+        $("#getCodeModal").modal('show');
+        return false;
+    } else {
+        // send post request
+        $.ajax("/api/burgers", {
+            type: "POST",
+            data: newBurger
+        }).then(function() {
+            console.log(newBurger.burger_type + " added!");
+        });
+        // reload page
+        location.reload();
+    };
 });

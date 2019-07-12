@@ -12,7 +12,7 @@ main {
     padding: 20px;
 }
 h1 {
-    font-weight: bold;
+    font-family: 'Paytone One', sans-serif;
     font-size: 3rem;
     text-align: center;
     margin: 20px;
@@ -42,10 +42,12 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-.eaten {
-    color: #999;
-}
 ul li {
     list-style: none;
     padding: 5px 0;
+}
+.eaten {
+    list-style: none;
+    margin-left: 20px;
+    color: #666;
 }

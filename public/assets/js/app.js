@@ -1,19 +1,15 @@
 // put request function to change eaten value to true when "devour it" button clicked
 $("#devour").on("click", function() {
     var id = $(this).attr("data-id");
-    var eaten = {
-        eaten: 1
-    };
 
     // send put request
     $.ajax("/api/burgers/" + id, {
-        type: "PUT",
-        data: eaten
+        type: "PUT"
     }).then(function(){
         console.log("Burger was eaten");
-        // reload page
-        location.reload();
     });
+    // reload page
+    location.reload();
 });
 
 // post request function to add a new burger

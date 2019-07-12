@@ -15,7 +15,7 @@ var orm = {
         });
     },
     update: function(val, cb) {
-        connection.query("UPDATE burgers SET eaten = 1 WHERE id = (?)", [val], function(err, result){
+        connection.query("UPDATE burgers SET eaten = true WHERE id = ?", [val], function(err, result){
             if (err) throw err;
             cb(result);
         });

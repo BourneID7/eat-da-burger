@@ -1,11 +1,7 @@
 # Eat da Burger!
 This full-stack web app allows users to input a type of burger they want to eat. On submit the new burger is added to the burger menu on the left side of the screen with a "Devour it!" button. Clicking the devour button moves the burger to the "Burgers You've Eaten" list on the right side. Burger data is stored to in a MySQL database for persistent results.
 
-<<<<<<< HEAD
 <img scr="./public/assets/images/eat-da-burger.jpg" alt="Eat-da-Burger home page" />
-=======
-<img scr="public/assets/images/eat-da-burger.jpg" alt="Eat-da-Burger home page" />
->>>>>>> f8fc6b11dc2f4b5890003d6f20e610f4c02448cc
 
 ## Technologies Used
 * Node.js
@@ -23,9 +19,5 @@ This full-stack web app allows users to input a type of burger they want to eat.
 * Front-end javascript validation was added to prevent adding a burger with no name.
 * A Bootstrap modal alerts the user to fill in a type of burger.
 
-<<<<<<< HEAD
 <img scr="./public/assets/images/file-structure.png" alt="MVC file structure" />
-=======
-<img scr="public/assets/images/file-structure.png" alt="MVC file structure" />
->>>>>>> f8fc6b11dc2f4b5890003d6f20e610f4c02448cc
 

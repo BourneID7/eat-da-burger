@@ -1,5 +1,5 @@
 // put request function to change eaten value to true when "devour it" button clicked
-$("#devour").on("click", function() {
+$(".devour").on("click", function() {
     var id = $(this).attr("data-id");
 
     // send put request

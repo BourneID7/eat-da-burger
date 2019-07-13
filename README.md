@@ -16,4 +16,3 @@ This full-stack web app allows users to input a type of burger they want to eat.
 * An html form allows user input to add new burgers to the menu. Clicking submit triggers a post request to add the new burger to the databse.
 * Front-end javascript validation was added to prevent adding a burger with no name.
 * A Bootstrap modal alerts the user to fill in a type of burger.
-
